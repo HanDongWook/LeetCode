@@ -3,7 +3,6 @@ class Solution {
         val arr = IntArray(digits.size + 1)
         for (i in 1..arr.lastIndex) arr[i] = digits[i-1]
         arr[arr.lastIndex] = arr[arr.lastIndex] + 1
-        println(arr[arr.lastIndex])
         for (i in arr.lastIndex downTo 1) {
             if (arr[i] == 10) {
                 arr[i] = 0
